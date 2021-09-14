@@ -1,0 +1,60 @@
+/***** 互動式噗寶*****/
+
+/*     預先載入圖片的區域     */
+#dynamic_logo::before {
+position: absolute;
+width: 0;
+height: 0;
+overflow: hidden;
+z-index: -10;
+content:
+url('https://images.plurk.com/1FmtmqzToQh0H9gO1UDxC.gif')
+url('https://images.plurk.com/7cERQbK7euom3NZGDoGX3L.gif')
+url('https://images.plurk.com/4OcmOOUMO3rgvt1Wn5wZW6.gif'); 
+}
+
+/*     顯示待機時噗寶圖案     */
+#dynamic_logo {
+position: fixed;
+bottom: 50px;
+right: 20px;
+z-index: 600;
+overflow: hidden;
+width: 200px;
+height: 200px;
+background: url('https://images.plurk.com/1FmtmqzToQh0H9gO1UDxC.gif') no-repeat left /contain;/* 待機時噗寶圖片網址 */
+}
+/*     游標懸浮時隱藏待機時噗寶圖案     */
+#dynamic_logo:hover {
+background: none;
+}
+
+/*     顯示游標懸浮時噗寶圖案     */
+#dynamic_logo::after {
+content: '';
+display: block;
+width: 100%;
+height: 100%;
+background: url('https://images.plurk.com/7cERQbK7euom3NZGDoGX3L.gif') no-repeat left/contain;/* 游標懸浮時噗寶圖網址 */
+cursor: pointer;
+}
+
+/*     游標未懸浮時隱藏懸浮時噗寶圖案     */
+#dynamic_logo:not(:hover)::after {
+background: none;
+}
+
+/*     顯示點擊後噗寶圖案     */
+#creature {
+display: none;
+padding-left: 100%;
+width: 100%;
+height: 100%;
+background: url('https://images.plurk.com/4OcmOOUMO3rgvt1Wn5wZW6.gif') no-repeat left/contain;/* 點擊後噗寶圖網址 */
+cursor: auto;
+}
+
+/* 顯示點擊後噗寶圖案 */
+#dynamic_logo:active #creature, #creature:hover {
+display: block;
+}
