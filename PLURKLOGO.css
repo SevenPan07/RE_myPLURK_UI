@@ -58,3 +58,19 @@ cursor: auto;
 #dynamic_logo:active #creature, #creature:hover {
 display: block;
 }
+
+
+
+/***** 靜止噗寶*****/
+#dynamic_logo::before {
+content:' '; 
+background: url('https://images.plurk.com/1FmtmqzToQh0H9gO1UDxC.gif') no-repeat left /contain;
+position: fixed !important;
+bottom: 50px;
+right: 20px;
+z-index: 600;
+overflow: hidden;
+width: 200px;
+height: 200px;
+
+}
