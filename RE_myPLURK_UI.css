@@ -354,60 +354,69 @@ div#bottom_line{
 }
 
 
-/**********左下訊息選單列**********/
-#all_plurks.filter_selected.bottom_line_bg, #own_plurks_tab_btn.off_tab,  #private_plurks_tab_btn.off_tab, #responded_plurks_tab_btn.off_tab, 
-#replurked_plurks_tab_btn, #favorite_plurks_tab_btn.off_tab, #filter_tab a.off_tab,  #filter_tab a.filter_selected{
+/**********訊息選單**********/
+a#all_plurks.filter_selected.bottom_line_bg, 
+a#own_plurks_tab_btn.off_tab,  
+a#private_plurks_tab_btn.off_tab, 
+a#responded_plurks_tab_btn.off_tab,  
+a#replurked_plurks_tab_btn,
+a#favorite_plurks_tab_btn.off_tab,  
+#filter_tab a.off_tab,   
+#filter_tab a.filter_selected  {
    position:relative;
    top:120px;
-   background: rgba(56, 56, 56,0.8) !important;
-   backdrop-filter:blur(20px) !important;
+   background: rgba(56, 56, 56,0.8);
+   backdrop-filter:blur(20px);
+   -webkit-backdrop-filter: blur(20px) !important;
+   color: rgba(255,255,255,1) !important;
+   font-size: 8px !important;
+   border-radius: 9px !important;
+}
+ /*   檢視未讀訊息   */
+div#updater a, 
+a#noti_re_text,
+a#mark_all_link, 
+a#view_all_plurk{
+   position:relative !important;
+   top:120px;
+   background: rgba(56, 56, 56,0.8);
+   backdrop-filter:blur(20px);
    -webkit-backdrop-filter: blur(20px) !important;
    border-radius: 9px !important;
    color: rgba(255,255,255,1) !important;
    font-size: 8px !important;
 }
 
- /*    檢視未讀訊息    */
-#updater a, a#noti_re_text,a#mark_all_link, a#view_all_plurk{
-   position:relative;
-   top:120px;
-   background: rgba(56, 56, 56,0.8) !important;
-   backdrop-filter:blur(20px) !important;
-   -webkit-backdrop-filter: blur(20px) !important;
-   border-radius: 9px;
-   font-size: 8px;
-   color: rgba(255,255,255,1) !important;
-}
+a#mark_all_link{
+   position:relative !important;
+   top:100px !important;
 
-#mark_all_link{
-   position:relative;
-   top:100px;
 }
-
- /*    未讀噗的數目    */
+ /*   未讀噗的數目   */
 .unread_generic{
-   background: rgba(255, 92, 92,0.8) !important;
-   backdrop-filter:blur(20px) !important;
-   -webkit-backdrop-filter: blur(20px) !important;
-   border-radius: 3px ;
-   border: 0 !important;
-   color: rgba(255,255,255,1) !important;
-   font-weight: 400; 
-   font-size: 8px;
-
-}
-
- /    *滑鼠移至訊息列的效果    */
-#filter_tab a.off_tab:hover,#filter_tab a.filter_selected:hover,#updater a:hover{
    background: rgba(255, 92, 92,0.8) !important; 
    backdrop-filter:blur(20px) !important;
    -webkit-backdrop-filter: blur(20px) !important;
-   border-radius: 9px;
-   text-decoration: none !important;
-   font-weight: 500;
+   border-radius: 3px !important;
+   border: 0 !important;
    color: rgba(255,255,255,1) !important;
+   font-weight: 400 !important; 
+   font-size: 8px !important;
+   
 }
 
+ /*   滑鼠移至訊息列的效果   */
+#filter_tab a.off_tab:hover,
+#filter_tab a.filter_selected:hover,
+#updater a:hover{
+   background: rgba(255, 92, 92,0.8) !important; 
+   backdrop-filter:blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   color: rgba(255,255,255,1) !important;
+   border-radius: 9px !important;
+   text-decoration: none !important;
+   font-weight: 500 !important; 
+}
 
 /********** 個人面板設定 **********/
 
@@ -681,7 +690,7 @@ div#bottom_line{
    transform: translate(0px, 20px);
 }
 .dash-stats-karma {
-   margin: 0;
+   margin: 0 !important;;
 }
 .dash-stats-karma .help {
    display: none !important;
