@@ -25,7 +25,7 @@
 # 目錄
 [一、	噗浪頁面簡介](#one)<br />
 [二、	優化動機與想優化之處](#two)<br />
-[三、	提案](#three)<br />
+[三、 優化提案](#three)<br />
 [四、 優化後成果展示](#four)<br />
 [五、 額外個人化設定](#five)<br /><br /><br />
 
@@ -80,17 +80,18 @@
 ![噗文](https://images.plurk.com/702GT8ZHSrueLS50jj8pNu.png) <br /><br />
 #### 選中的噗文
 選中的噗文透明度會由opacity:0.5;轉為opacity:0.9;讓使用者能夠清楚看見所選內容。<br /><br />
+![選中的噗文](https://images.plurk.com/7Fg4BDSJZuybd53oULe9ef.png)<br />
 ![選中的噗文gif](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E9%81%B8%E4%B8%AD%E7%9A%84%E5%99%97%E6%96%87%E5%B1%95%E7%A4%BA.gif) <br /><br />
 #### 點開圖片後的彈跳視窗、噗文展開後
 以不同透明度表示層級關係，而游標懸浮於回應時，該回應的透明度由opacity:0.7;改為opacity:0.8;，以表示滑到哪個回應。<br />
 並且增加淡入淡出動畫讓懸浮效果更為柔和。<br /><br />
-![圖片彈跳視窗](https://images.plurk.com/2fYsQfqKp1I6m0TctQc61x.png) ![噗文展開](https://images.plurk.com/5XaRpygoSiMdSOzzyObFzd.png) <br /><br />
+![圖片彈跳視窗](https://images.plurk.com/2fYsQfqKp1I6m0TctQc61x.png) ![噗文展開](https://images.plurk.com/5XaRpygoSiMdSOzzyObFzd.png) <br />
 ![圖片彈跳視窗gif](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E5%BD%88%E8%B7%B3%E8%A6%96%E7%AA%97%E5%B1%95%E7%A4%BA.gif)<br />
 ![噗文展開gif](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E5%99%97%E6%96%87%E5%B1%95%E9%96%8B%E5%B1%95%E7%A4%BA.gif) <br /><br />
 
 #### 顯示發表噗文時間
 去掉時間軸線和預設的顯示發表噗文時間，修改為使用者觸碰到該則噗文時，顯示於下方，可在不影響觀看噗文的情況下，得知此則噗文的發表時間。<br /><br />
-![發噗時間](https://images.plurk.com/12jmggoQjvFKdIlfkKeRTv.png) <br /><br />
+![發噗時間](https://images.plurk.com/12jmggoQjvFKdIlfkKeRTv.png) <br />
 ![發噗時間](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E7%99%BC%E6%96%87%E6%97%A5%E6%9C%9F%E5%B1%95%E7%A4%BA.gif)<br /><br />
 #### 噗文回應數
 將噗文回應數改為對話框形狀，並且在未讀的部分以陰影表現發亮提示的效果。<br /><br />
@@ -100,7 +101,7 @@
 未懸浮時:<br />
 ![發文面板_未懸浮](https://images.plurk.com/2HehU7vsOQuDqIUrFejVL8.png)<br /><br />
 懸浮時:<br />
-![發文面板_懸浮](https://images.plurk.com/6l3LxRosaJEIZf2vtH9DBI.png)<br /><br />
+![發文面板_懸浮](https://images.plurk.com/6l3LxRosaJEIZf2vtH9DBI.png)<br />
 ![發文面板gif](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E7%99%BC%E6%96%87%E9%9D%A2%E6%9D%BF%E5%B1%95%E7%A4%BA.gif)<br /><br />
 #### 訊息通知欄
 修改訊息通知欄，統一整體色彩、透明度及圓角風格，並且置於發文面板左側。<br /><br />
