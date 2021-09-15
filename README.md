@@ -25,8 +25,8 @@
 # 目錄
 [一、	噗浪頁面簡介](#one)<br />
 [二、	優化動機與想優化之處](#two)<br />
-[三、	修改提案](#three)<br />
-[四、 修改後成果展示](#four)<br />
+[三、	提案](#three)<br />
+[四、 優化後成果展示](#four)<br />
 [五、 額外個人化設定](#five)<br /><br /><br />
 
 <span id="one"> </span>
@@ -53,12 +53,12 @@
 ![原版](https://images.plurk.com/3mS85F2yP9TRvhUZICw1VN.png)<br /><br />
 <br /><br />
 <span id="three"> </span>
-### 三、	修改提案
+### 三、 優化提案
 #### 1.	Framework
 #### 網頁版面<br />
 將河道拉高，使噗文能夠距離更開，去除時間軸線打破分隔，並且將發文面板置於最下方，將整體空間擴張。<br />
 而個人資訊收合於頭貼並且置於畫面左上角的圓圈處，Karma值放置在頭貼下方。在點入他人頁面時，噗浪的河道會於最左邊有個空區塊，放置於此較不會阻擋使用者觀看河道上的噗文。<br />
-將噗文、發文面板、發文者頭貼等元件改為圓角，使視覺更柔和、美觀。<br /><br />
+將噗文、發文面板、發文者頭貼等元件改為圓角，所有的懸浮效果皆加入淡入淡出動畫，使視覺更柔和、美觀。<br /><br />
 ![網頁框架](https://images.plurk.com/6lu3JQqie2ssJ4vR8Z9QOr.png)<br /><br />
 #### 個人資訊版面<br />
 當游標懸浮於頭貼時將可展開個人資訊，涵蓋暱稱、帳號ID、性別、自我介紹，並將背景包覆卡碼值。<br /><br />
@@ -71,7 +71,7 @@
 ![主色](https://images.plurk.com/1XhSLrtf8OI380vEuy7FiL.png)<br /><br />
 <br /><br />
 <span id="four"> </span>
-### 四、 修改後成果展示
+### 四、 優化後成果展示
 #### 1. 幾乎滿版的河道
 ![新版](https://images.plurk.com/41bBfoPBvIPxgwP5W8O1zY.png)<br /><br />
 #### 2.元件
@@ -79,11 +79,17 @@
 增加圓角、透明度增添視覺柔和效果。<br /><br />
 ![噗文](https://images.plurk.com/702GT8ZHSrueLS50jj8pNu.png) <br /><br />
 #### 點開圖片後的彈跳視窗、噗文展開後
-以不同透明度表示層級關係，而游標懸浮於回應時，該回應的透明度由opacity:0.5;改為opacity:0.8;，以表示滑到哪個回應。<br /><br />
+以不同透明度表示層級關係，而游標懸浮於回應時，該回應的透明度由opacity:0.5;改為opacity:0.8;，以表示滑到哪個回應。<br />
+並且增加淡入淡出動畫讓懸浮效果更為柔和。<br /><br />
 ![圖片彈跳視窗](https://images.plurk.com/2fYsQfqKp1I6m0TctQc61x.png) ![噗文展開](https://images.plurk.com/5XaRpygoSiMdSOzzyObFzd.png) <br /><br />
+![圖片彈跳視窗gif](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E5%BD%88%E8%B7%B3%E8%A6%96%E7%AA%97%E5%B1%95%E7%A4%BA.gif)<br />
+![噗文展開gif](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E5%99%97%E6%96%87%E5%B1%95%E9%96%8B%E5%B1%95%E7%A4%BA.gif) <br /><br />
+
+
 #### 顯示發表噗文時間
 去掉時間軸線和預設的顯示發表噗文時間，修改為使用者觸碰到該則噗文時，顯示於下方，可在不影響觀看噗文的情況下，得知此則噗文的發表時間。<br /><br />
-![發噗時間](https://images.plurk.com/12jmggoQjvFKdIlfkKeRTv.png)
+![發噗時間](https://images.plurk.com/12jmggoQjvFKdIlfkKeRTv.png) <br /><br />
+![發噗時間](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E7%99%BC%E6%96%87%E6%97%A5%E6%9C%9F%E5%B1%95%E7%A4%BA.gif)<br /><br />
 #### 噗文回應數
 將噗文回應數改為對話框形狀，並且在未讀的部分以陰影表現發亮提示的效果。<br /><br />
 ![已讀框](https://images.plurk.com/4QTmvwHdfRkb1tO2cmoBFe.png) ![未讀框](https://images.plurk.com/3PnN8Z9FIUp2bI2PZaD7Cf.png)<br /><br />
@@ -93,11 +99,13 @@
 ![發文面板_未懸浮](https://images.plurk.com/2HehU7vsOQuDqIUrFejVL8.png)<br /><br />
 懸浮時:<br />
 ![發文面板_懸浮](https://images.plurk.com/6l3LxRosaJEIZf2vtH9DBI.png)<br /><br />
+![發文面板gif](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E7%99%BC%E6%96%87%E9%9D%A2%E6%9D%BF%E5%B1%95%E7%A4%BA.gif)<br /><br />
 #### 訊息通知欄
 修改訊息通知欄，統一整體色彩、透明度及圓角風格，並且置於發文面板左側。<br /><br />
 ![訊息通知欄_未懸浮](https://images.plurk.com/mH5caMzhpR6YkRetYnUqs.png)<br /><br />
 當游標懸浮時會反紅回饋。<br /><br />
 ![訊息通知欄_懸浮](https://images.plurk.com/5f644yXWtjltW5WtFBsuOk.png)<br /><br />
+![訊息通知欄_懸浮gif](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E8%A8%8A%E6%81%AF%E9%81%B8%E5%96%AE%E5%B1%95%E7%A4%BA.gif)<br /><br />
 #### 時間軸上標示的日期
 由於去掉了時間軸和顯示每則噗發文的時間，原時間軸的位置變為寬敞，所以以較為清晰的opacity:1的黑色來標註瀏覽噗文日期的分隔點。<br /><br />
 ![訊息通知欄_懸浮](https://images.plurk.com/497zeb28Q2IgV8Q2YEP0F1.png)<br /><br />
