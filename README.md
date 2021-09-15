@@ -14,7 +14,7 @@
 
 
 ### 原版頁面
-![原版](https://images.plurk.com/11AiyKOIgPtElW7rSmBJwx.png)
+![原版](https://images.plurk.com/1mR22fyusQkFMWZLg4Qw39.png)
 ### 優化後新版頁面
 ![新版](https://images.plurk.com/41bBfoPBvIPxgwP5W8O1zY.png)
 <br /><br />
@@ -33,16 +33,16 @@
  ### 一、	噗浪頁面簡介
 噗浪的網頁版頁面區塊大致分為上方導覽列、中間瀏覽噗文可左右滾動的橫軸河道、下方為含有個人資訊以及發表噗文的主控版。而噗浪官方提供使用者撰寫CSS語法以修改個人版面，增加個人化的風格彈性。<br /><br />
 此為原版頁面設計:<br /><br />
-![原版](https://images.plurk.com/11AiyKOIgPtElW7rSmBJwx.png)![原版2](https://images.plurk.com/2nnCzx5JXp883sEZnf0MHd.png)
+![原版](https://images.plurk.com/1mR22fyusQkFMWZLg4Qw39.png)![原版2](https://images.plurk.com/4yCbrkuoi8djuYhE8PCse.png)
 <br /><br /><br /><br />
 <span id="two"> </span>
 ### 二、	優化動機與想優化之處
 #### 1. 無法瀏覽所有資訊範圍
 現代人電腦普及，瀏覽社群網頁已是日常生活的消遣之一，不過每個人使用的螢幕大小不同，以我來說，我平時使用的是筆記型電腦，螢幕較小，雖然能夠看見的頁面範圍已足夠個人方便使用發表貼文的功能，不過當造訪他人頁面時，使用者會無法直接看見對方的自我介紹資訊、點選加入好友、關注的按鈕(黃框處)，需將頁面下拉。<br /><br />
 造訪他人的頁面時:<br /><br />
-![他人頁面1](https://images.plurk.com/1yxZzLLoA4tC5GNE5wV4gT.png)![他人頁面2](https://images.plurk.com/72povJsMNL1c4G8AOFxVLK.png)<br /><br />
+![他人頁面1](https://images.plurk.com/5wAUsh4AUAaE8cYWN35dTn.png)![他人頁面2](https://images.plurk.com/4J5g54StU6F2sDCWX77Dbt.png)<br /><br />
 而對於使用者於個人頁面時，下方主控版的部分除了發文欄為必要區塊，自我介紹、Karma值、好友、粉絲、勳章等資訊，並非日常使用頻繁的區塊，在瀏覽時會壓縮時間軸上呈現的噗文空間。(黃框處)<br /><br />
-![使用者個人頁面黃框](https://images.plurk.com/5JxJt6konZSFSAndvoURN5.png)<br /><br />
+![使用者個人頁面黃框](https://images.plurk.com/5BqOrHQrAHDhr44Qb9aBI3.png)<br /><br />
 #### 2. 色彩與元件形狀
 由於背景圖片會隨使用者而改變，整體風格與色調也會一同改變，不過噗文的底色、訊息提示的紅色標籤較難以融入使用者個人化頁面。
 而噗文的形狀為長方形，視覺上較為尖銳，與下方主控台預設的圓角風格不同。若噗文密集時也會造成畫面視覺凌亂，也遮住使用者喜愛的背景。<br />
@@ -50,7 +50,7 @@
 ![原版點選圖片彈出視窗](https://images.plurk.com/5xsewoLJIbD1aDYMGw9Rbn.png)![原版點選噗文展開](https://images.plurk.com/4lMueLFdlKjMenzto0Gj5v.png)<br /><br />
 #### 3. 河道畫面擁擠
 當噗文較多的時候，河道上的噗文排列較為密集，給視覺帶來擁擠的感覺。<br /><br />
-![原版](https://images.plurk.com/11AiyKOIgPtElW7rSmBJwx.png)<br /><br />
+![原版](https://images.plurk.com/3mS85F2yP9TRvhUZICw1VN.png)<br /><br />
 <br /><br />
 <span id="three"> </span>
 ### 三、	修改提案
