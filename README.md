@@ -77,13 +77,13 @@
 #### 2.元件
 #### 噗文
 增加圓角、透明度增添視覺柔和效果。<br /><br />
-![噗文](https://images.plurk.com/3D5cbyV7d1wGaRQTTf84LT.png) <br /><br />
+![噗文](https://images.plurk.com/702GT8ZHSrueLS50jj8pNu.png) <br /><br />
 #### 點開圖片後的彈跳視窗、噗文展開後
 以不同透明度表示層級關係，而游標懸浮於回應時，該回應的透明度由opacity:0.5;改為opacity:0.8;，以表示滑到哪個回應。<br /><br />
 ![圖片彈跳視窗](https://images.plurk.com/2fYsQfqKp1I6m0TctQc61x.png) ![噗文展開](https://images.plurk.com/5XaRpygoSiMdSOzzyObFzd.png) <br /><br />
 #### 顯示發表噗文時間
 去掉時間軸線和預設的顯示發表噗文時間，修改為使用者觸碰到該則噗文時，顯示於下方，可在不影響觀看噗文的情況下，得知此則噗文的發表時間。<br /><br />
-![發噗時間](https://images.plurk.com/1r7VoaVmY8zXmOmqu7COIp.png)
+![發噗時間](https://images.plurk.com/12jmggoQjvFKdIlfkKeRTv.png)
 #### 噗文回應數
 將噗文回應數改為對話框形狀，並且在未讀的部分以陰影表現發亮提示的效果。<br /><br />
 ![已讀框](https://images.plurk.com/4QTmvwHdfRkb1tO2cmoBFe.png) ![未讀框](https://images.plurk.com/3PnN8Z9FIUp2bI2PZaD7Cf.png)<br /><br />
