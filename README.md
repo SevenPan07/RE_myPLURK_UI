@@ -14,9 +14,9 @@
 
 
 ### 原版頁面
-![gif原版](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E8%88%8A%E7%89%88%E5%B1%95%E7%A4%BA.gif)
+![原版](https://images.plurk.com/11AiyKOIgPtElW7rSmBJwx.png)
 ### 優化後新版頁面
-![gif新版](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E6%96%B0%E7%89%88%E5%B1%95%E7%A4%BA.gif)
+![新版](https://images.plurk.com/41bBfoPBvIPxgwP5W8O1zY.png)
 <br /><br />
 實際效果可至此處查看、使用:<br />
 [展示RE_myPLURK_UI](https://www.plurk.com/pmihle)
