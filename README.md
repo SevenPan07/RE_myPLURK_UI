@@ -11,15 +11,25 @@
 <br />
 <br />
 
+
 ### 原版頁面
 ![gif原版](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E8%88%8A%E7%89%88%E5%B1%95%E7%A4%BA.gif)
 ### 優化後新版頁面
 ![gif新版](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E6%96%B0%E7%89%88%E5%B1%95%E7%A4%BA.gif)
 <br />
-### 一、	噗浪頁面簡介 :
+# 目錄
+[一、	噗浪頁面簡介](#one)<br />
+[二、	優化動機與想優化之處](#two)<br />
+[三、	修改提案](#three)<br />
+[四、 修改後成果展示](#four)<br />
+[五、 額外個人化設定](#five)<br />
+
+<span id="one"> </span>
+ ### 一、	噗浪頁面簡介 :
 噗浪的網頁版頁面區塊大致分為上方導覽列、中間瀏覽噗文可左右滾動的橫軸河道、下方為含有個人資訊以及發表噗文的主控版。而噗浪官方提供使用者撰寫CSS語法以修改個人版面，增加個人化的風格彈性。<br /><br />
 此為原版頁面設計:
 ![原版](https://images.plurk.com/11AiyKOIgPtElW7rSmBJwx.png)![原版2](https://images.plurk.com/2nnCzx5JXp883sEZnf0MHd.png)
+<span id="two"> </span>
 ### 二、	優化動機與想優化之處:
 #### 1. 無法瀏覽所有資訊範圍
 現代人電腦普及，瀏覽社群網頁已是日常生活的消遣之一，不過每個人使用的螢幕大小不同，以我來說，我平時使用的是筆記型電腦，螢幕較小，雖然能夠看見的頁面範圍已足夠個人方便使用發表貼文的功能，不過當造訪他人頁面時，使用者會無法直接看見對方的自我介紹資訊、點選加入好友、關注的按鈕(黃框處)，需將頁面下拉。<br /><br />
@@ -35,6 +45,7 @@
 #### 3. 河道畫面擁擠
 當噗文較多的時候，河道上的噗文排列較為密集，給視覺帶來擁擠的感覺。<br /><br />
 ![原版](https://images.plurk.com/11AiyKOIgPtElW7rSmBJwx.png)<br /><br />
+<span id="three"> </span>
 ### 三、	修改提案:
 #### 1.	Framework:
 ##### 網頁版面<br />
@@ -51,6 +62,7 @@
 #### 2.	訂定主用色:
 以較為柔和的紅與黑色為主，讓整體畫面更和諧，不會太過亮麗刺眼。並且透過不同透明度的白色以表示層級關係。而帶有透明度的色彩可以透出背景，讓畫面更有溫度。<br /><br />
 ![主色](https://images.plurk.com/1XhSLrtf8OI380vEuy7FiL.png)<br /><br />
+<span id="four"> </span>
 ### 四、 修改後成果展示:
 #### 1. 幾乎滿版的河道:
 ![新版](https://images.plurk.com/2jKY6FW21Rsarst33kASYU.png)<br /><br />
@@ -85,8 +97,9 @@
 #### 3. 個人資訊與Karma值面板的收合
 利用互動的效果展開個人資訊，不必受限於螢幕大小需要下拉頁面才能觀看和點選，也因動畫效果增添了趣味性。在進入頁面時頭貼與卡碼值會有縮放的動畫，提示使用者去觸碰它們。<br /><br />
 ![個人資訊與Karma值面板](https://github.com/SevenPan07/RE_myPLURK_UI/blob/main/READMEimage/%E5%80%8B%E4%BA%BA%E7%89%88%E9%9D%A2%E5%B1%95%E6%BC%94.gif)<br /><br />
+<span id="five"> </span>
 ### 五、額外個人化設定:
-##### 噗浪獸
+#### 噗浪獸
 預設在畫面右上角的噗浪獸(另稱為噗寶)為噗浪的特色之一，此圖像會隨著節日不同而變化，官方有提供不同的選擇供使用者依喜好更換。<br />
 使用者可以css方式置換噗浪獸的圖片，也可利用官方的框架更改為互動式噗寶可以讓使用者與自己喜愛的角色互動，產生療癒放鬆的心情。<br />
 互動效果分別為待機時、游標懸浮時(以游標手指提示使用者點選)、點選時。<br /><br />
