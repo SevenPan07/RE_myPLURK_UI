@@ -10,32 +10,34 @@
 /*    噗文大頭貼    */
 .p_img img {
   border-radius: 2px 0 0px 2px;
-  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5) !important;
 }
 
 /*    發文者姓名    */
 .name {
     text-shadow: 0 0 1px #fff, 0 0 3px #fff !important;
-    z-index: 855;
+    z-index: 800;
 }
 
 /*    噗文行距    */
 .text_holder {
-  line-height: 1.6em;}
+  line-height: 1.6em;
+}
   
 /*    噗本體    */
 .cboxAnchor:not(.response) .plurk_cnt {
-  border-radius: 0 8px 8px 8px;
   background: rgba(255, 255, 255, 0.5) !important;
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
+  backdrop-filter:blur(20px) !important;
+  -webkit-backdrop-filter:blur(20px) !important;
+  border-radius: 0 8px 8px 8px;
   transition: 0.1s ease;
 }
 
 /*    游標選中的噗文    */
 .cboxAnchor:not(.response).display .plurk_cnt {
   background: rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter:blur(20px);
+  backdrop-filter:blur(20px) !important;
+  -webkit-backdrop-filter:blur(20px) !important;
   border-radius: 0 8px 8px 8px;
   transition: 0.2s ease;
   min-width: 400px;
@@ -51,10 +53,10 @@
 }
 
 
-/*    展開噗文    */
+/*    展開的噗文    */
 .cboxAnchor:not(.response).plurk_box .plurk_cnt {
-  border-radius: 0px 8px 0 0;
   background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 0px 8px 0 0;
 }
 .plurk_editor_form {
   order: 4;
@@ -65,26 +67,28 @@
   height:20px;
 }
 
-/*    重置回應欄位背景    */
+/*    清空回應欄位背景    */
 .response_box {
-background: none !important;
-border: none;
+  background: none !important;
+  border: none !important;
 }
 .cboxAnchor.response .plurk_cnt {
 background: none !important;
 }
 .plurk_box .mini_form {
 background: none !important;
-border: none;
+border: none !important;
 }
+
+/*    重新填上回應欄背景    */
 #form_holder{
 background: rgba(255, 255, 255, 0.7) !important;
-backdrop-filter:blur(20px);
--webkit-backdrop-filter: blur(20px);
+backdrop-filter:blur(20px) !important;
+-webkit-backdrop-filter: blur(20px) !important;
 border-radius: 0 0 7px 7px;
 }
 .icons_holder .pif-emoticon:after {
-display: none;
+display: none !important;
 }
 #resp_banner_ads{
 border-radius: 0 0 7px 7px;
@@ -95,9 +99,8 @@ border-radius:7px;
 transition: 0.1s ease;
 }
 
-/*    避免噗文展開後被切掉    */
-#timeline_cnt,
-.block_cnt {
+/*    避免噗文展開後被切    */
+#timeline_cnt,.block_cnt {
 overflow-y: visible !important;
 }
 .div_inner {
@@ -115,11 +118,10 @@ bottom: 0;
   text-align: center;
   line-height: 25px;
   font-weight: 100;
-  font-size: 12px;
   transform: scale(0.8);
 }
 .response_count {
-  padding: 0;
+  padding: 0.5px;
   border-radius: 50%;
   background: none;
 }
@@ -127,73 +129,73 @@ bottom: 0;
 /*    回應數字(未讀)    */
 .new .response_count {
   position: relative !important;
-  background-color: #FF5C5C;
   width: 25px;
   height: 25px;
+  background-color: #FF5C5C;
 }
 
 /**********回覆框**********/
 
 /*    新回應框    */
 .new .response_count{
-position: relative;
-top:-28px;
-left:-19px;
-border-radius:30px;
-background-color:#FF5C5C;
-font-size: 8px;
-text-align:center;
-z-index:100;
-width:100%;
-height:100%;
-min-width:30px;
-max-height:25px;
-line-height:8px; 
-box-shadow: 0px 0px 9px 0px rgba(255, 84, 41, 0.8);
+  position: relative !important;
+  width:100%;
+  height:100%;
+  min-width:30px;
+  max-height:25px;
+  top:-28px;
+  left:-19px;
+  background-color:#FF5C5C;
+  border-radius:30px;
+  box-shadow: 0px 0px 9px 0px rgba(255, 84, 41, 0.8);
+  font-size: 8px;
+  text-align:center;
+  line-height:8px; 
+  z-index:100 !important;
 }
 
 /*    新回應尾巴    */
 .new .response_count::after {
-content:"";
-position:absolute;
-left:2px;
-top:10px;
-border-style: solid solid solid solid;
-border-width: 4px; 
-height: 0px; 
-width: 0px; 
-border-color: #FF5C5C transparent transparent #FF5C5C;
+   content:"";
+   position:absolute !important;
+   width: 0px;
+   height: 0px;
+   top:10px;
+   left:2px;
+   border-style: solid solid solid solid;
+   border-width: 4px; 
+   border-color: #FF5C5C transparent transparent #FF5C5C;
 }
 
 /*    已讀框    */
 .response_count{
-position: relative;
-top:-28px;
-left:-19px;
-border:5px solid transparent;
-border-radius:30px;
-background-color:#383838;
-font-size: 10px;
-text-align:center;
-z-index:100;
-width:100%;
-height:100%;
-min-width:30px;
-max-height:25px;
-line-height:8px; 
+   position: relative !important;
+   width:100%;
+   height:100%;
+   min-width:30px;
+   max-height:25px;
+   top:-28px;
+   left:-19px;
+   border:5px solid transparent;
+   background-color:#383838;
+   border-radius:30px;
+   font-size: 8px;
+   text-align:center;
+   line-height:8px; 
+   z-index:100 !important;
 }
 
 /*    已讀尾巴    */
 .response_count::after {
-content:"";
-position:absolute;
-left:2px;
-top:10px;
-border-style: solid solid solid solid;
-border-width: 4px; 
-height: 0px; 
-width: 0px; 
-border-color: #383838 transparent transparent #383838;
+   content:"";
+   position:absolute !important;
+   top:10px;
+   left:2px;
+   width: 0px;
+   height: 0px; 
+   border-style: solid solid solid solid;
+   border-width: 4px; 
+   border-color: #383838 transparent transparent #383838;
 }
 
 /*    頭貼旁鎖噗、喜歡、轉噗icon    */
@@ -221,28 +223,28 @@ border-color: #383838 transparent transparent #383838;
 /*    彈跳視窗噗文和回覆輸入欄    */
 ._lch_ ~ .pop-window .divplurk, ._lch_ ~ .pop-window .mini_form,._lch_ ~ .pop-window .cbox_ads{
   background: rgba(255, 255, 255, 0.7) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter:  blur(20px);
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter:  blur(20px) !important;
 }
 
 /*    點入喜歡、轉噗的視窗    */
 ._lch_ ~ .pop-window .pop-window-view {
-  border-radius: 8px !important;
   background: rgba(255, 255, 255, 0.5) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter:  blur(20px);
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter:  blur(20px) !important;
+   border-radius: 8px !important;
 }
 
 /*    點入喜歡、轉噗字樣    */
 ._lch_ ~ .pop-window .pop-window-view .title{
-color: #FFF !important;
+   color: #FFF !important;
 }
 
 /*    彈跳視窗的回覆    */
 ._lch_ ~ .pop-window .response_box {
   background: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter:  blur(20px);
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter:  blur(20px) !important;
 }
 
 /*    彈跳視窗的圖片底色    */
@@ -253,8 +255,8 @@ color: #FFF !important;
 }
 ._lch_ ~ .pop-window .pop-window-view iframe {
   background: rgba(255, 255, 255, 0.8) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
 }
 
 /*    彈出視窗的輸入框圓角    */
@@ -267,7 +269,7 @@ color: #FFF !important;
 }
 
 
-/**********河道可視範圍調整**********/
+/**********河道加寬範圍調整**********/
 #timeline_holder {
   height: calc(100vh - 170px) !important;
 }
@@ -295,246 +297,241 @@ div.cmp_back_to_today.pif-arrow-right{
 /*    日期    */
 .day_start{
   background:rgba(56, 56, 56,0.8) !important; 
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: 8px !important;
   color:#ffffff;
   padding: 2px 10px !important;
-  border-radius: 8px !important;
 }
 
 /*    時間    */
 .time_start{
-background: none !important;
-border: 0 !important;
-opacity: 0; filter: alpha(opacity=0);
+   background: none !important;
+   border: 0 !important;
+   opacity: 0; filter: alpha(opacity=0);
 } 
 
 /*    每則噗的對應時間    */
 #time_show{
-  top: auto !important;
-  bottom: -10%;
-  background: rgba(56, 56, 56,0.5) !important;
-  backdrop-filter: blur(20px);
-  border: 0 !important;
-  padding: 5px 10px !important;
-  border-radius: 8px !important;
+   top: auto !important;
+   bottom: -10%;
+   background: rgba(56, 56, 56,0.5) !important;
+   backdrop-filter: blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   border-radius: 8px !important;
+   border: 0 !important;
+   padding: 5px 10px !important;
 }
 #time_show span {
-color: rgba(255,255,255,0.8) !important;
- font-size: 1.5em !important;
- font-weight: 400  !important;
+   font-size: 1.5em !important;
+   font-weight: 400  !important;
+   color: rgba(255,255,255,0.8) !important;
 }
 #time_show span,#time_show{
-  z-index:1000;
+   z-index:1000 !important;
 }
 
 /*    時間軸底線    */
 div#bottom_line{
-  background: none !important;
-  border: 0 !important;
-  opacity: 0; filter: alpha(opacity=0);
+   background: none !important;
+   border: 0 !important;
+   opacity: 0; filter: alpha(opacity=0);
 }
 
 /*    沒有未讀訊息、顯示所有訊息字樣    */
 #empty_timeline_fg, #empty_timeline_bg {
-  color: rgba(255,255,255,1) !important; 
-  font-size: 20px !important;
-  text-shadow: 0px 0px 0px rgba(56,56,56,1); 
-  font-weight:400;
+   font-size: 20px !important;
+   font-weight:400;
+   color: rgba(255,255,255,1) !important;
+   text-shadow: 0px 0px 0px rgba(56,56,56,1) !important;
 } 
 #empty_timeline_fg a, #empty_timeline_bg a { 
-color: rgba(255,255,255,1) !important;
-  font-weight:400;
+   color: rgba(255,255,255,1) !important;
+   font-weight:400;
 }
 #empty_timeline_fg a:hover, #empty_timeline_bg a:hover{ 
-  color: rgba(255,255,255,1) !important;
+   color: rgba(255,255,255,1) !important;
 }
 
 
 /**********左下訊息選單列**********/
-a#all_plurks.filter_selected.bottom_line_bg,  /*所有訊息*/
-a#own_plurks_tab_btn.off_tab,  /*我發表的訊息*/
-a#private_plurks_tab_btn.off_tab,  /*私人訊息*/
-a#responded_plurks_tab_btn.off_tab,  /*回應過的訊息*/
-a#replurked_plurks_tab_btn,   /*轉噗的訊息*/
-a#favorite_plurks_tab_btn.off_tab,  /*喜歡的訊息*/
-#filter_tab a.off_tab,   /*未選*/
-#filter_tab a.filter_selected  /*正選*/{
-  background: rgba(56, 56, 56,0.8);
-  backdrop-filter:blur(20px);
-  color: rgba(255,255,255,1) !important;
-  font-size: 8px !important;
-  border-radius: 9px !important;
-  position:relative;
-  top:120px;
+#all_plurks.filter_selected.bottom_line_bg, #own_plurks_tab_btn.off_tab,  #private_plurks_tab_btn.off_tab, #responded_plurks_tab_btn.off_tab, 
+#replurked_plurks_tab_btn, #favorite_plurks_tab_btn.off_tab, #filter_tab a.off_tab,  #filter_tab a.filter_selected{
+   position:relative;
+   top:120px;
+   background: rgba(56, 56, 56,0.8) !important;
+   backdrop-filter:blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   border-radius: 9px !important;
+   color: rgba(255,255,255,1) !important;
+   font-size: 8px !important;
 }
 
  /*    檢視未讀訊息    */
-div#updater a, 
-a#noti_re_text,
-a#mark_all_link, 
-a#view_all_plurk{
-  background: rgba(56, 56, 56,0.8);
-  backdrop-filter:blur(20px);
-  color: rgba(255,255,255,1) !important;
-  font-size: 8px !important;
-  border-radius: 9px !important;
-  position:relative;
-  top:120px;
+#updater a, a#noti_re_text,a#mark_all_link, a#view_all_plurk{
+   position:relative;
+   top:120px;
+   background: rgba(56, 56, 56,0.8) !important;
+   backdrop-filter:blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   border-radius: 9px;
+   font-size: 8px;
+   color: rgba(255,255,255,1) !important;
 }
 
-a#mark_all_link{
-  position:relative;
-  top:100px;
+#mark_all_link{
+   position:relative;
+   top:100px;
 }
 
  /*    未讀噗的數目    */
 .unread_generic{
-  background: rgba(255, 92, 92,0.8) !important; 
-  backdrop-filter:blur(20px);
-  border: 0 !important;
-  color: rgba(255,255,255,1) !important;
-  font-weight: 400 !important; 
-  font-size: 8px !important;
-  border-radius: 3px !important;
+   background: rgba(255, 92, 92,0.8) !important;
+   backdrop-filter:blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   border-radius: 3px ;
+   border: 0 !important;
+   color: rgba(255,255,255,1) !important;
+   font-weight: 400; 
+   font-size: 8px;
+
 }
 
  /    *滑鼠移至訊息列的效果    */
-#filter_tab a.off_tab:hover,
-#filter_tab a.filter_selected:hover,
-#updater a:hover{
-  background: rgba(255, 92, 92,0.8) !important; 
-  backdrop-filter:blur(20px);
-  color: rgba(255,255,255,1) !important;
-  text-decoration: none !important;
-  border-radius: 9px !important;
-  font-weight: 500 !important; 
+#filter_tab a.off_tab:hover,#filter_tab a.filter_selected:hover,#updater a:hover{
+   background: rgba(255, 92, 92,0.8) !important; 
+   backdrop-filter:blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   border-radius: 9px;
+   text-decoration: none !important;
+   font-weight: 500;
+   color: rgba(255,255,255,1) !important;
 }
 
 
 /********** 個人面板設定 **********/
 
-/*    重置背景    */
+/*    清空背景    */
 .dash-segment .segment-content {
-background: none;
-margin: 0;
+   background: none !important;
+   margin: 0 !important;
 }
 #plurk-dashboard {
-background: none;
-border: none;
+   background: none !important;
+   border: none !important;
 }
 
 /*    發文版    */
 .dash-group-form {
-  position: relative !important;
-  left: 55%;
-  transform: translate(-50%, 0%);
-  width: calc(100vw - 150px) !important;
-  max-width: 900px !important;border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  z-index: 500;
+   position: relative !important;
+   left: 55% !important;
+   transform: translate(-50%, 0%) !important;
+   width: calc(100vw - 150px) !important;
+   max-width: 900px !important;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.8) !important;
+   backdrop-filter: blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   z-index: 500 !important;
 }
 
 .dash-group-form:hover {
-  opacity: 1;filter: alpha(opacity=100);
-  z-index: 1000;
-  transition:opacity 0.1s ease;
+   opacity: 1;filter: alpha(opacity=100);
+   z-index: 1000 !important;
+   transition:opacity 0.1s ease;
 }
 .dash-group-form:not(:hover){
-  opacity: 0.3;filter: alpha(opacity=30);
-  transition:opacity 0.2s ease;
+   opacity: 0.3;filter: alpha(opacity=30);
+   transition:opacity 0.2s ease;
 }
 
 #plurk-dashboard .dash-group-form .segment-content {
-  min-height: 60px;
+  min-height: 60px !important;
 }
 
 #plurk-dashboard .plurkForm {
-  display: flex;
-  align-items: flex-end;/*對齊容器底部*/
-  margin: 0 0 8px 4px;
-  flex-wrap: wrap;/*可換行*/
-  justify-content: flex-end;/*從行尾開始排*/
+   display: flex !important;
+   flex-wrap: wrap !important;
+   align-items: flex-end;
+   justify-content: flex-end;
+   margin: 0 0 8px 4px;
 }
 
 #main_poster .input_holder {
-  order: 1;
-  flex-grow: 1;
-  border-radius: 10px;
-  padding-right: 10px;
-  min-width: 200px;
+   order: 1 !important;
+   flex-grow: 1 !important;
+   min-width: 200px !important;
+   border-radius: 10px;
+   padding-right: 10px;
 }
 
 #main_poster .icons_holder {
-  min-width: 190px;
-  order: 2;
-  margin-left: 10px;
+   order: 2 !important;
+   min-width: 190px !important;
+   margin-left: 10px;
 }
 
 #main_poster .submit_img {
-  order: 3;
-  width: auto;
-  border-radius: 10px;
-  padding: 5px 15px 0 15px;
-  line-height: 30px;
-  margin-right: 5px;
+   order: 3 !important;
+   width: auto !important;
+   line-height: 30px;
+   border-radius: 10px;
+   padding: 5px 15px 0 15px;
+   margin-right: 5px;
 }
 
 .qual_holder .m_qualifier {
-  border-radius: 5px;
-padding: 3px 11px 4px 10px;
+   border-radius: 5px;
+   padding: 3px 11px 4px 10px;
 }
 
 
 /*    自介版    */
 .dash-group-left {
-  position: fixed !important;
-  top: 70px;
-  left: 1%;
-  color: #383838;
-  padding: 10px;
+   position: fixed !important;
+   top: 70px !important;
+   left: 1% !important;
    width: 300px !important;
-  background: none;
-  border-radius: 150px;
-  max-height: 115px;
-  max-width:115px;
-  transition:  max-height 0.15s,max-width 0.5s, transform 0.5s, background 0.5s    ease;
-  border-radius 1s 1s ease;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter:  blur(20px);
-  z-index: 900;
+   overflow: hidden !important;
+   max-height: 115px;
+   max-width:115px;
+   background: none;
+   background-color: rgba(255, 255, 255, 0.8) !important;
+   backdrop-filter: blur(20px) !important;
+   -webkit-backdrop-filter:  blur(20px) !important;
+   border-radius: 150px; 
+   transition:  max-height 0.15s,max-width 0.5s, transform 0.5s, background 0.5s  ease;
+   border-radius 1s 1s ease;
+   color: #383838;
+   padding: 10px;
+   z-index: 900;
 }
 #dash-profile {
-  margin-left: 0px;
+   margin-left: 0px;
 }
 .dash-group-left:hover {
-  max-height: 100vh;
-  max-width:500px;
-  /*transform: translate(0);*/
-  border-radius: 8px;
-  transition: max-height 0.5s, transform 0.5s, background 0.5s, border-radius 0.3s ease;
+   max-height: 100vh;
+   max-width:500px;
+   border-radius: 8px;
+   transition: max-height 0.5s, transform 0.5s, background 0.5s, border-radius 0.3s ease;
 }
 
-#full_name,
-.profile-info {
-  margin-left: 110px !important;
-  white-space: nowrap;/*不換行*/
+#full_name, .profile-info {
+   margin-left: 110px !important;
+   white-space: nowrap !important;
 }
 .dash-group-left #dash-additional-info {
-  width: 320px;
+   width: 320px !important;
 }
 
 /*    個人名稱    */
 #plurk-dashboard .display_name{
-  margin-top: 28px;
-  position: static !important;
+   position: static !important;
+   margin-top: 28px;
 }
 #plurk-dashboard .profile-info {
-  margin-top: 10px;
-  position: static !important;
+   position: static !important;
+   margin-top: 10px;
 }
 
 /*    自介    */
@@ -543,20 +540,21 @@ padding: 3px 11px 4px 10px;
 }
 /*    自介面版的傳送私人訊息鈕    */
 #private_plurk{
-border-radius: 5px;
-margin-left:-3px;
+   border-radius: 5px;
+   margin-left:-3px;
 }
 
 /*    自介連結顏色    */
 #plurk-dashboard #about_me a {
-  color: #FF5C5C !important;
+   color: #FF5C5C !important;
+   text-decoration:none !important;
 }
 
 /*    噗幣位置    */
 #plurk-dashboard .profile-icons {
-  display: inline-block;
+  display: inline-block !important;
   left: 67px;
-  bottom: 3px !important;
+  bottom: 3px;
 }
 
 /*大頭貼圓角*/
@@ -572,115 +570,119 @@ margin-left:-3px;
 
 /*    統計版    */
 .dash-group-right {
-  position: fixed !important;
-  top: 200px;
-  left: 1%;
-  color: white;
-  padding: 10px;
-  border-radius: 40px;
-  max-height: 60px;
-  max-width:130px;
-  width: 700px !important;
-  height:400px !important;
-  transition:  max-height 0.15s,max-width 0.5s, transform 0.5s, background 0.5s    ease;
-  border-radius 1s 1s ease;
-  overflow: hidden;
-  background-color: rgba(56, 56, 56, 0.6);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  z-index: 900;
-  white-space: nowrap;
+   position: fixed !important;
+   overflow: hidden;
+   white-space: nowrap;
+   top: 200px;
+   left: 1%;
+   width: 700px !important;
+   height:400px !important;
+   max-height: 60px;
+   max-width:130px;
+   background-color: rgba(56, 56, 56, 0.6) !important;
+   backdrop-filter: blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   border-radius: 40px;
+   color: white !important;
+   transition:  max-height 0.15s,max-width 0.5s, transform 0.5s, background 0.5s    ease;
+   border-radius 1s 1s ease;
+   padding: 10px;
+   z-index: 900;
 }
 .dash-group-right:hover {
-  max-height: 100vh;
-  max-width:100vh;
-  border-radius: 8px;
+   max-height: 100vh !important;
+   max-width:100vh !important;
+   border-radius: 8px;
    transition: max-height 0.5s, transform 0.5s, background 0.5s, border-radius 0.3s ease;
-  transform: translate(0);
+   transform: translate(0);
 }
 .dash-group-left:hover + .dash-group-right {
-  background: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  transform: translate(22px, 0px)  scale(1.5);
-  pointer-events: none;
+   background: none !important;
+   backdrop-filter: none !important;
+   -webkit-backdrop-filter: none !important;
+   transform: translate(22px, 0px)  scale(1.5);
+   pointer-events: none !important;
 }
 .dash-group-right .segment-content {
-  height: 100px;
+   height: 100px;
 }
 #dash-stats-table {
-  position: absolute;
-  left: 150px;
-  width: 400px !important;
+   position: absolute !important;
+   left: 150px;
+   width: 400px;
 }
 #dash-stats h2 {
-  display: none;
+  display: none !important;
 }
 #plurk-dashboard .dash-segment #dash-stats table td {
-  color: white;
+  color: white !important;
 }
 
 /*    按鈕    */
 #plurk-dashboard a.friend_man {
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+   border-radius: 8px;
+   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /*    好友、粉絲列表、勳章    */
 #friend_holder .clearfix, #fan_holder .clearfix{
-width:150px;
+   width:150px;
 }
 #dash-award{
-margin-top:-150px;
-margin-left:350px;
+   margin-top:-150px;
+   margin-left:350px;
 }
 #dash-fans{
-margin-left:-142px;
+   display:inline-block !important;
+   margin-left:-142px;
 }
 #dash-friends{
-margin-left:10px;
+   margin-left:10px;
+}
+#dash-friends h2,#h2_fans{
+   transform:translate(0%,0%);
+}
+#friend_managment, #fan_managment{
+   display:inline-block !important;
+   transform:translate(0%,0%);
 }
 
 /*    Karma值    */
 .dash-stats-karma {
-  width: auto !important;
-  position: absolute;
-  left: -20px;
+   position: absolute !important;
+   width: auto !important;
+   left: -20px;
 }
 .karma_hover {
-  display: flex;
-  margin: 0px;
-  left: 7px;
-  text-indent: -300px;
-  pointer-events: none;
+   display: flex !important;
+   left: 7px;
+   text-indent: -300px;
+   pointer-events: none;
+   margin: 0px;
 }
 #karma_holder {
-  display: inline-block;
-  position: relative;
-  text-indent: 5px;
-  left: 0px;
+   display: inline-block !important;
+   position: relative !important;
+   left: 0px;
+   text-indent: 5px;
 }
 #karma {
-  position: relative;
-  display: inline-block;
-  text-align: right;
-  font-size: 35px;
-  width: 3.5em;
-  top: -10px;
-  left: -5px;
-  padding: 10px;
-  color: #FF5C5C;
-  text-shadow:  0px 0px 20px rgba(255, 92, 0, 0.5) !important;
-  transition: transform 0.5s, font-size 0.5s;
-}
-.dash-stats-karma .help {
-  display: none;
-}
-.dash-stats-karma {
-  margin: 0 !important;
+   position: relative !important;
+   display: inline-block !important;
+   width: 3.5em !important;
+   text-align: center !important;
+   font-size: 35px;
+   color: #FF5C5C;
+   text-shadow:  0px 0px 20px rgba(255, 92, 0, 0.5) !important;
+   transition: transform 0.5s, font-size 0.5s;
 }
 .dash-group-right:hover #karma {
-  transform: translate(0px, 20px);
-  font-size: 45px;
+   font-size: 45px;
+   transform: translate(0px, 20px);
 }
-
+.dash-stats-karma {
+   margin: 0;
+}
+.dash-stats-karma .help {
+   display: none !important;
+}
