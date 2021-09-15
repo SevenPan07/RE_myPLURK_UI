@@ -387,11 +387,6 @@ a#view_all_plurk{
    font-size: 8px !important;
 }
 
-a#mark_all_link{
-   position:relative !important;
-   top:100px !important;
-
-}
  /*   未讀噗的數目   */
 .unread_generic{
    background: rgba(255, 92, 92,0.8) !important; 
