@@ -18,8 +18,6 @@
 ### 優化後新版頁面
 ![新版](https://images.plurk.com/41bBfoPBvIPxgwP5W8O1zY.png)
 <br /><br />
-實際效果可至此處查看、使用:<br />
-[展示RE_myPLURK_UI](https://www.plurk.com/pmihle)
 
 <br /><br />
 # 目錄
