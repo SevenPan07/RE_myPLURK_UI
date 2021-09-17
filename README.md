@@ -1,5 +1,5 @@
 # 橫式卷軸社群──噗浪網頁UI設計  myPLURK_UI X CSS
-![myPLURK_UI](https://images.plurk.com/5ViUFy9HQrHUvpN2Rh4rwu.png)
+![myPLURK_UI](https://images.plurk.com/1MmHmvtGu0zQ4BbfiDbEjp.png)
 ### 整體規劃與撰寫耗時:約七日
 <br /><br />
 
