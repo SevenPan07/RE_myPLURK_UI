@@ -95,7 +95,7 @@
 將噗文回應數改為對話框形狀，並且在未讀的部分以陰影表現發亮提示的效果。<br /><br />
 ![已讀框](https://images.plurk.com/4QTmvwHdfRkb1tO2cmoBFe.png) ![未讀框](https://images.plurk.com/3PnN8Z9FIUp2bI2PZaD7Cf.png)<br /><br />
 #### 發文面板
-發文面板於游標未懸浮時透明度降低為opacity:0.3;，使網頁整體視覺效果加大，懸浮時為opacity:0.3;讓使用者方便使用。<br /><br />
+發文面板於游標未懸浮時透明度降低為opacity:0.3;，使網頁整體視覺效果加大，懸浮時為opacity:1;讓使用者方便使用。<br /><br />
 未懸浮時:<br />
 ![發文面板_未懸浮](https://images.plurk.com/2HehU7vsOQuDqIUrFejVL8.png)<br /><br />
 懸浮時:<br />
